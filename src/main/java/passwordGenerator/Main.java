@@ -68,7 +68,7 @@ public class Main extends Application {
             GeneratePasswordByLength passwordGenerator = new GeneratePasswordByLength();
             String generatedPassword = passwordGenerator.generatePassword(passwordLength, includeUppercase, includeDigits, includeSpecialCharacters);
 
-            passwordArea.setText("Згенерований пароль: " + generatedPassword);
+            passwordArea.setText(generatedPassword);
         });
 
         copyButton.setOnAction(event -> {
