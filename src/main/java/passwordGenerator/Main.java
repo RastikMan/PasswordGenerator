@@ -76,12 +76,6 @@ public class Main extends Application {
             ClipboardContent content = new ClipboardContent();
             content.putString(passwordArea.getText());
             clipboard.setContent(content);
-
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Генератор паролів v1");
-            alert.setHeaderText(null);
-            alert.setContentText("Пароль скопійовано в буфер обміну.");
-            alert.showAndWait();
         });
 
         Scene scene = new Scene(mainLayout, 400, 300);

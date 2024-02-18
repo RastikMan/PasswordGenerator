@@ -8,7 +8,7 @@ public class GeneratePasswordByLength {
     private static final String DIGITS = "0123456789";
     private static final String SPECIAL_CHARACTERS = "!@#$%^&*()-_=+";
 
-    public static String generatePassword(int length, boolean useUppercase, boolean useDigits, boolean useSpecialCharacters) {
+    public String generatePassword(int length, boolean useUppercase, boolean useDigits, boolean useSpecialCharacters) {
         StringBuilder characters = new StringBuilder(LOWERCASE);
         if (useUppercase) characters.append(UPPERCASE);
         if (useDigits) characters.append(DIGITS);
